@@ -89,16 +89,18 @@ export default {
     .nav-link {
       ul {
         display: flex;
-        gap: 15px;
+        gap: 20px;
       }
 
       li {
         line-height: 75px;
-        border-bottom: 5px solid transparent;
+        border-bottom: 3px solid transparent;
+        font-size: 11px;
+        cursor: pointer;
         transition: 200ms linear;
 
         &:hover {
-          border-bottom: 5px solid #0082f9;
+          border-bottom: 3px solid #0082f9;
         }
       }
 

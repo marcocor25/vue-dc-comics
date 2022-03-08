@@ -58,8 +58,10 @@ export default {
     .thumb-wrapper {
       display: flex;
       align-items: center;
+      padding: 0 10px;
       gap: 10px;
       cursor: pointer;
+      transition: 200ms linear;
 
       .thumb-image {
         width: 50px;
@@ -72,6 +74,10 @@ export default {
 
       h4 {
         text-transform: uppercase;
+      }
+
+      &:hover {
+        background: rgba($color: #333, $alpha: 0.3);
       }
     }
   }

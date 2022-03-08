@@ -83,6 +83,11 @@ export default {
       li {
         cursor: pointer;
         color: #788d77;
+
+        &:hover {
+          color: #fffffd;
+          text-decoration: underline;
+        }
       }
     }
 

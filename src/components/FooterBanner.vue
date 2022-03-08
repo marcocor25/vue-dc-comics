@@ -52,6 +52,12 @@ export default {
       text-transform: uppercase;
       cursor: pointer;
       color: #fffffd;
+      transition: 200ms linear;
+
+      &:hover {
+        transform: scale(1.1);
+        background: #1e518d;
+      }
     }
 
     .social-wrapper {
@@ -60,6 +66,7 @@ export default {
       gap: 20px;
       text-transform: uppercase;
       color: #0c80f7;
+      cursor: default;
     }
 
     .icons-wrapper {
@@ -71,6 +78,11 @@ export default {
       width: 25px;
       height: 25px;
       cursor: pointer;
+      transition: 200ms linear;
+
+      &:hover {
+        transform: scale(1.2);
+      }
     }
   }
 }
