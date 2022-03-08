@@ -1,25 +1,16 @@
 <template>
   <div class="container-fluid">
     <div class="container">
-      <div class="button">sign-up now</div>
+      <div class="button">{{ buttonText }}</div>
 
       <div class="social-wrapper">
-        <h3>follow us</h3>
+        <h3>{{ socialText }}</h3>
         <div class="icons-wrapper">
-          <figure class="icon">
-            <img src="../assets/img/footer-facebook.png" />
-          </figure>
-          <figure class="icon">
-            <img src="../assets/img/footer-twitter.png" />
-          </figure>
-          <figure class="icon">
-            <img src="../assets/img/footer-youtube.png" />
-          </figure>
-          <figure class="icon">
-            <img src="../assets/img/footer-pinterest.png" />
-          </figure>
-          <figure class="icon">
-            <img src="../assets/img/footer-periscope.png" />
+          <figure v-for="(element, index) in social" :key="index" class="icon">
+            <img
+              :src="require(`../assets/img/` + element.img)"
+              :alt="element.text"
+            />
           </figure>
         </div>
       </div>
@@ -29,7 +20,35 @@
 
 <script>
 export default {
-  name: "FooterBanner",
+  name: "NavFooter",
+  data() {
+    return {
+      buttonText: "sign-up now",
+      socialText: "follow us",
+      social: [
+        {
+          text: "Facebook",
+          img: "footer-facebook.png",
+        },
+        {
+          text: "Twitter",
+          img: "footer-twitter.png",
+        },
+        {
+          text: "YouTube",
+          img: "footer-youtube.png",
+        },
+        {
+          text: "Pinterest",
+          img: "footer-pinterest.png",
+        },
+        {
+          text: "Periscope",
+          img: "footer-periscope.png",
+        },
+      ],
+    };
+  },
 };
 </script>
 

@@ -54,10 +54,11 @@ export default {
 <style scoped lang="scss">
 .container-fluid {
   background: #0082f9;
+  padding: 20px 0;
 
   .container {
     width: 1000px;
-    min-height: 130px;
+    min-height: 110px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -69,6 +70,7 @@ export default {
       align-items: center;
       padding: 0 10px;
       gap: 10px;
+      border-radius: 10px;
       cursor: pointer;
       transition: 200ms linear;
 
@@ -86,7 +88,7 @@ export default {
       }
 
       &:hover {
-        background: rgba($color: #333, $alpha: 0.3);
+        background: rgba($color: #333, $alpha: 0.2);
       }
     }
   }

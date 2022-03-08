@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid">
     <div class="container">
-      <h1>→ Content goes here ←</h1>
+      <h1>{{ text }}</h1>
     </div>
   </div>
 </template>
@@ -9,6 +9,11 @@
 <script>
 export default {
   name: "MyMain",
+  data() {
+    return {
+      text: "--> Content goes here <--",
+    };
+  },
 };
 </script>
 
