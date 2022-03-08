@@ -1,35 +1,18 @@
 <template>
   <div class="container-fluid">
     <div class="container">
-      <div class="thumb-wrapper">
+      <div
+        v-for="(element, index) in thumbs"
+        :key="index"
+        class="thumb-wrapper"
+      >
         <figure class="thumb-image">
-          <img src="../assets/img/buy-comics-digital-comics.png" />
+          <img
+            :src="require(`../assets/img/` + element.img)"
+            :alt="element.text"
+          />
         </figure>
-        <h4>digital comics</h4>
-      </div>
-      <div class="thumb-wrapper">
-        <figure class="thumb-image">
-          <img src="../assets/img/buy-comics-merchandise.png" />
-        </figure>
-        <h4>dc merchandise</h4>
-      </div>
-      <div class="thumb-wrapper">
-        <figure class="thumb-image">
-          <img src="../assets/img/buy-comics-subscriptions.png" />
-        </figure>
-        <h4>subscription</h4>
-      </div>
-      <div class="thumb-wrapper">
-        <figure class="thumb-image">
-          <img src="../assets/img/buy-comics-shop-locator.png" />
-        </figure>
-        <h4>comic shop locator</h4>
-      </div>
-      <div class="thumb-wrapper">
-        <figure class="thumb-image">
-          <img src="../assets/img/buy-dc-power-visa.svg" />
-        </figure>
-        <h4>dc power visa</h4>
+        <h4>{{ element.text }}</h4>
       </div>
     </div>
   </div>
@@ -38,6 +21,32 @@
 <script>
 export default {
   name: "MyBanner",
+  data() {
+    return {
+      thumbs: [
+        {
+          img: "buy-comics-digital-comics.png",
+          text: "digital comics",
+        },
+        {
+          img: "buy-comics-merchandise.png",
+          text: "dc merchandise",
+        },
+        {
+          img: "buy-comics-subscriptions.png",
+          text: "subscription",
+        },
+        {
+          img: "buy-comics-shop-locator.png",
+          text: "comic shop locator",
+        },
+        {
+          img: "buy-dc-power-visa.svg",
+          text: "dc power visa",
+        },
+      ],
+    };
+  },
 };
 </script>
 
