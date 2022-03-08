@@ -37,7 +37,7 @@
 
 <script>
 export default {
-  name: "MyMain",
+  name: "MyBanner",
 };
 </script>
 
@@ -47,11 +47,12 @@ export default {
   background: #0082f9;
 
   .container {
-    width: 950px;
+    width: 1000px;
     min-height: 130px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
+    padding: 0 20px;
     color: #fffffd;
 
     .thumb-wrapper {

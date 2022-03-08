@@ -4,6 +4,7 @@
     <MyMain />
     <MyBanner />
     <MyFooter />
+    <FooterBanner />
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import MyHeader from "./components/MyHeader.vue";
 import MyMain from "./components/MyMain.vue";
 import MyBanner from "./components/MyBanner.vue";
 import MyFooter from "./components/MyFooter.vue";
+import FooterBanner from "./components/FooterBanner.vue";
 
 export default {
   name: "App",
@@ -20,6 +22,7 @@ export default {
     MyMain,
     MyBanner,
     MyFooter,
+    FooterBanner,
   },
 };
 </script>
