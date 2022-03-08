@@ -2,6 +2,7 @@
   <div id="app">
     <MyHeader />
     <MyMain />
+    <MyBanner />
     <MyFooter />
   </div>
 </template>
@@ -9,6 +10,7 @@
 <script>
 import MyHeader from "./components/MyHeader.vue";
 import MyMain from "./components/MyMain.vue";
+import MyBanner from "./components/MyBanner.vue";
 import MyFooter from "./components/MyFooter.vue";
 
 export default {
@@ -16,6 +18,7 @@ export default {
   components: {
     MyHeader,
     MyMain,
+    MyBanner,
     MyFooter,
   },
 };
@@ -38,7 +41,6 @@ ul {
 }
 
 #app {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   font-family: Avenir, Helvetica, Arial, sans-serif;
