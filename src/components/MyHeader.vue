@@ -30,13 +30,13 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .container {
-  min-width: 1000px;
+  width: 1000px;
   min-height: 80px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: white;
+  border: 2px dashed red;
 
   .logo {
     width: 70px;

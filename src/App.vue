@@ -46,6 +46,5 @@ ul {
   -moz-osx-font-smoothing: grayscale;
   font-size: 12px;
   color: #2c3e50;
-  background: salmon;
 }
 </style>
