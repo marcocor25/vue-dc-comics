@@ -1,7 +1,6 @@
 <template>
   <div>
     <h1>Test Main</h1>
-    <img src="../assets/img/dc-logo.png" alt="" />
   </div>
 </template>
 
