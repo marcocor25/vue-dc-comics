@@ -47,12 +47,11 @@ export default {
   background: #0082f9;
 
   .container {
-    width: 1000px;
+    width: 950px;
     min-height: 130px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    border: 2px dashed red;
     color: #fffffd;
 
     .thumb-wrapper {

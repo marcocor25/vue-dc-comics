@@ -36,7 +36,6 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 2px dashed red;
 
   .logo {
     width: 60px;
