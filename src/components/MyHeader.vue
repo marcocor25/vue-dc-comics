@@ -101,6 +101,7 @@ export default {
 
         &:hover {
           border-bottom: 3px solid #0082f9;
+          color: #0082f9;
         }
       }
 
@@ -109,6 +110,7 @@ export default {
         text-decoration: none;
         text-transform: uppercase;
         color: currentColor;
+        transition: 200ms linear;
       }
     }
   }
