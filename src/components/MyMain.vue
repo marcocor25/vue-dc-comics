@@ -3,7 +3,7 @@
     <div class="jumbotron"></div>
     <div class="container">
       <div class="badge">
-        <h2>{{ badge }}</h2>
+        <h2>{{ badgeText }}</h2>
       </div>
       <MyThumbs
         v-for="(element, index) in itemsArray"
@@ -11,6 +11,11 @@
         :img="element.thumb"
         :title="element.series"
       />
+    </div>
+    <div class="button-wrapper">
+      <div class="button">
+        {{ buttonText }}
+      </div>
     </div>
   </div>
 </template>
@@ -25,8 +30,9 @@ export default {
   },
   data() {
     return {
-      badge: "current series",
+      badgeText: "current series",
       text: "--> Content goes here <--",
+      buttonText: "load more",
       itemsArray: [
         {
           thumb:
@@ -132,16 +138,13 @@ export default {
 
   .container {
     width: 1000px;
-    min-height: 100px;
     margin: 0 auto;
-    padding: 50px 0;
+    padding-top: 50px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 20px;
     color: #fffffd;
-    border: 2px dashed yellow;
     position: relative;
 
     .badge {
@@ -155,6 +158,29 @@ export default {
       user-select: none;
       color: #fffffd;
       background: #0082f9;
+    }
+  }
+
+  .button-wrapper {
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .button {
+      padding: 5px 30px;
+      text-align: center;
+      text-transform: uppercase;
+      user-select: none;
+      cursor: pointer;
+      color: #fffffd;
+      background: #0082f9;
+      transition: 200ms linear;
+
+      &:hover {
+        transform: scale(1.1);
+        background: #1a71d2;
+      }
     }
   }
 }
