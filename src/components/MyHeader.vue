@@ -93,7 +93,7 @@ export default {
       }
 
       li {
-        line-height: 75px;
+        line-height: 77px;
         border-bottom: 3px solid transparent;
         font-size: 11px;
         cursor: pointer;
